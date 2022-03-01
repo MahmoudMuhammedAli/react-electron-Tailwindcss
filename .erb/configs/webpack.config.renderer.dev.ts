@@ -64,6 +64,8 @@ const configuration: webpack.Configuration = {
       {
         test: /\.s?css$/,
         use: [
+          'postcss-loader',
+          'postcss',
           'style-loader',
           {
             loader: 'css-loader',
